@@ -13,6 +13,8 @@
 		D2711D021A765E7B00C27AE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2711D011A765E7B00C27AE3 /* Images.xcassets */; };
 		D2711D051A765E7B00C27AE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2711D031A765E7B00C27AE3 /* LaunchScreen.xib */; };
 		D2711D111A765E7B00C27AE3 /* ClosureSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2711D101A765E7B00C27AE3 /* ClosureSampleTests.swift */; };
+		D2711D1B1A765ECC00C27AE3 /* ClosureClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2711D1A1A765ECC00C27AE3 /* ClosureClass.swift */; };
+		D2711D1D1A76676A00C27AE3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2711D1C1A76676A00C27AE3 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		D2711D0A1A765E7B00C27AE3 /* ClosureSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClosureSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2711D0F1A765E7B00C27AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2711D101A765E7B00C27AE3 /* ClosureSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureSampleTests.swift; sourceTree = "<group>"; };
+		D2711D1A1A765ECC00C27AE3 /* ClosureClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureClass.swift; sourceTree = "<group>"; };
+		D2711D1C1A76676A00C27AE3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2711D1D1A76676A00C27AE3 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +64,7 @@
 		D2711CEC1A765E7B00C27AE3 = {
 			isa = PBXGroup;
 			children = (
+				D2711D1C1A76676A00C27AE3 /* CoreMotion.framework */,
 				D2711CF71A765E7B00C27AE3 /* ClosureSample */,
 				D2711D0D1A765E7B00C27AE3 /* ClosureSampleTests */,
 				D2711CF61A765E7B00C27AE3 /* Products */,
@@ -83,6 +89,7 @@
 				D2711D011A765E7B00C27AE3 /* Images.xcassets */,
 				D2711D031A765E7B00C27AE3 /* LaunchScreen.xib */,
 				D2711CF81A765E7B00C27AE3 /* Supporting Files */,
+				D2711D1A1A765ECC00C27AE3 /* ClosureClass.swift */,
 			);
 			path = ClosureSample;
 			sourceTree = "<group>";
@@ -161,6 +168,7 @@
 				TargetAttributes = {
 					D2711CF41A765E7B00C27AE3 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4B873Q67MK;
 					};
 					D2711D091A765E7B00C27AE3 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2711D1B1A765ECC00C27AE3 /* ClosureClass.swift in Sources */,
 				D2711CFD1A765E7B00C27AE3 /* ViewController.swift in Sources */,
 				D2711CFB1A765E7B00C27AE3 /* AppDelegate.swift in Sources */,
 			);

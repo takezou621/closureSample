@@ -9,17 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var pressureLabel: UILabel!
+    let closureClass = ClosureClass()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // 気圧センサーの情報を取得する
+        self.closureClass.retrievePressure { (result:String) -> String in
+            self.pressureLabel.text = result
+            return result
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 

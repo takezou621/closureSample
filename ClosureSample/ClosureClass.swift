@@ -13,7 +13,7 @@ class ClosureClass: NSObject {
     
     let altimeter = CMAltimeter()
     
-    func retrievePressure(completionHandler: (result:String) -> String) {
+    func retrievePressure(completionHandler: (result:String) -> Void) {
         if CMAltimeter.isRelativeAltitudeAvailable() {
             println("対応機種")
             self.altimeter.startRelativeAltitudeUpdatesToQueue(NSOperationQueue.mainQueue()) {
@@ -21,7 +21,9 @@ class ClosureClass: NSObject {
                 if error == nil {
                    // 正常
                     var text = String(format: "%.2f", data.pressure.doubleValue*10)
-                
+                    
+                    // 計測を停止
+                    self?.altimeter.stopRelativeAltitudeUpdates()
                     completionHandler(result: text)
                 }else{
                    // エラー

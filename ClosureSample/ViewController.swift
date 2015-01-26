@@ -15,9 +15,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // 気圧センサーの情報を取得する
-        self.closureClass.retrievePressure { (result:String) -> String in
+        self.closureClass.retrievePressure { (result:String) -> Void in
             self.pressureLabel.text = result
-            return result
         }
     }
 
